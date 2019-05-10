@@ -1,3 +1,13 @@
+# Descirption
+ 
+ In this article[https://blog.briebug.com/5-ways-to-pass-data-into-child-components-in-angular?fbclid=IwAR1jz4fk-NDba2EDwu-h2KlkQmRtkc_lUyrkc2nUFhNTqPokLC4XIhKgFcM], we find that are 5 ways to pass data from root component to child component  in this project i use the first way, inputs and outputs decorator.
+
+# Description of the project
+
+
+
+
+
 # DataIntoComponentsInputs
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
