@@ -27,7 +27,15 @@
 
 <!--Aqui se inyecta al hijo-->
 <!--Se recorre todo el array estudiantes del padre y se manda por medio del @input al hijo-->
+
+<!--Aqui tambien va el output del hacia el padre-->
+<!--En este mismo selector el dato va a volver-->
+<!--Usando los perentesis, se crea un evento propio de nombre cambio-->
+<!--viene en cambio y se envia como parametro de la funcion que vamos a crear-->
 <hr>
 <h6 class="text-muted">Este es el hijo</h6>
 <app-hijo *ngFor="let estudiante of estudiantes"
-[estudiante] = "estudiante"></app-hijo>
+[estudiante] = "estudiante"
+(cambio) = "funCambiar($event)"
+></app-hijo>
+<p> EL dato con el output es: {{datohijo}}</p>

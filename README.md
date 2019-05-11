@@ -8,7 +8,9 @@
 The father coponent take nombre and matricula inputs and pass them to son component <br>
 when we clikc the buttom("Ingresar en el hijo")
 
-
+## Uso del output 
+Son mas complejos, no puende funcionar de la misma forma, se necesita generar un evento, puede ser <br>
+el click
 
 
 # DataIntoComponentsInputs

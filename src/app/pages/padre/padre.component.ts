@@ -10,6 +10,7 @@ export class PadreComponent implements OnInit {
   public matricula;
   public estudiantes = [{name: 'Armando Tapia', matricula: 45}];
   public activo = true;
+  datohijo = 'sin datos';
 
   constructor() { }
 
@@ -22,6 +23,12 @@ export class PadreComponent implements OnInit {
     this.activo = false;
     this.name = '';
     this.matricula = '';
+  }
+
+  // para el output
+  funCambiar(e) {
+    console.log(e);
+    this.datohijo = e;
   }
 
 }
