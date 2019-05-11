@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PadreComponent implements OnInit {
   public name;
   public matricula;
-  public estudiantes = [];
+  public estudiantes = [{name: 'Armando Tapia', matricula: 45}];
+  public activo = true;
 
   constructor() { }
 
@@ -18,6 +19,9 @@ export class PadreComponent implements OnInit {
   pushAlArray() {
     let estudiante = {name: this.name, matricula: this.matricula};
     this.estudiantes.push(estudiante);
+    this.activo = false;
+    this.name = '';
+    this.matricula = '';
   }
 
 }

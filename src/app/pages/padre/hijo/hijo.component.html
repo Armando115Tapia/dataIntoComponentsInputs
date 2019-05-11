@@ -1,3 +1,24 @@
 <div class="container">
-<p> {{estudiante.name}} " pagará: " {{estudiante.matricula}}</p>
+  <!--<p> {{estudiante.name}} " pagará: " {{estudiante.matricula}}</p>-->
+<div class="row">
+  <div class="col-xl-9">
+    <a href="#" class="list-group-item clearfix my-1">
+      <div class="pull-left">
+        <h4 class = "list-group-item-heading text-success">{{estudiante.name}}</h4>
+        <p class="list-group-item-text text-success">Saldo: {{estudiante.matricula}}$</p>
+      </div>
+      <div class="pull-right">
+        <i class = "fas fa-user fa-3x text-success mx-5"></i>
+      </div>
+    </a>
+  </div>
 </div>
+</div>
+
+
+
+<!--
+  (class = class="list-group-item" ) les muesta como caja
+  (class="pull-left") dentro del lista grupo(crea un item) y le pone a la izquierda
+  (class="pull-right") dentro del lista grupo(crea un item) y le pone a la derecha
+-->

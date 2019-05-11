@@ -4,6 +4,9 @@
 
 # Description of the project
 
+## Uso del Input
+The father coponent take nombre and matricula inputs and pass them to son component <br>
+when we clikc the buttom("Ingresar en el hijo")
 
 
 

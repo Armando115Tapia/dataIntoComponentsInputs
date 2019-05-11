@@ -18,7 +18,7 @@
 
       </div>
       <p
-          *ngIf="(name !== undefined && matricula !== undefined) && (name !== '' && matricula !== '')">
+          *ngIf="(name !== undefined && matricula !== undefined) && (name !== '' && matricula !== '') && activo !== !(activo)">
           El estuandiante: {{name}} debe cancelar la cantidad de: {{matricula}}$</p>
       <button type="button" class="btn btn-outline-success btn-lg btn-block mt-3" (click)="pushAlArray()">Ingresar en el Hijo</button>
   </div>
@@ -26,8 +26,8 @@
 </div>
 
 <!--Aqui se inyecta al hijo-->
+<!--Se recorre todo el array estudiantes del padre y se manda por medio del @input al hijo-->
 <hr>
 <h6 class="text-muted">Este es el hijo</h6>
-
 <app-hijo *ngFor="let estudiante of estudiantes"
 [estudiante] = "estudiante"></app-hijo>
