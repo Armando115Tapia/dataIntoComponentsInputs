@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent implements OnInit {
-  public estudiante ;
+  public name;
+  public matricula;
 
   constructor() { }
 

@@ -7,6 +7,7 @@ import { HeaderComponent } from './pages/header/header.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PadreComponent } from './pages/padre/padre.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FooterComponent } from './pages/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
