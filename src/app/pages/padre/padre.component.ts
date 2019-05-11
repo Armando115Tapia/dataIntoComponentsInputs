@@ -8,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class PadreComponent implements OnInit {
   public name;
   public matricula;
+  public estudiantes = [];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  pushAlArray() {
+    let estudiante = {name: this.name, matricula: this.matricula};
+    this.estudiantes.push(estudiante);
   }
 
 }

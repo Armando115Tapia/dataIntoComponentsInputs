@@ -17,8 +17,17 @@
             <input  [(ngModel)]="matricula" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
 
       </div>
-      <p *ngIf="(name !== undefined && matricula !== undefined) && (name !== '' && matricula !== '') " > El estuandiante: {{name}} debe cancelar la cantidad de: {{matricula}} $$</p>
-      <button type="button" class="btn btn-outline-success btn-lg btn-block mt-3">Ingresar en el Hijo</button>
+      <p
+          *ngIf="(name !== undefined && matricula !== undefined) && (name !== '' && matricula !== '')">
+          El estuandiante: {{name}} debe cancelar la cantidad de: {{matricula}}$</p>
+      <button type="button" class="btn btn-outline-success btn-lg btn-block mt-3" (click)="pushAlArray()">Ingresar en el Hijo</button>
   </div>
 </div>
 </div>
+
+<!--Aqui se inyecta al hijo-->
+<hr>
+<h6 class="text-muted">Este es el hijo</h6>
+
+<app-hijo *ngFor="let estudiante of estudiantes"
+[estudiante] = "estudiante"></app-hijo>
